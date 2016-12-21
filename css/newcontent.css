@@ -1,0 +1,79 @@
+.Content_Text {
+  width: 94%;
+  margin-left: 3%;
+  padding-bottom: 30px;
+  height: auto;
+  overflow: hidden; }
+  .Content_Text .n_h1 {
+    font-size: 18px;
+    text-align: left;
+    font-weight: normal;
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #f5f5f5;
+    padding: 10px 0;
+    margin-bottom: 10px; }
+  .Content_Text .n_p {
+    margin-top: 10px;
+    color: #474747;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 20px; }
+  .Content_Text .n_h2 {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 15px 0; }
+  .Content_Text .n_h3 {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #042ea6; }
+  .Content_Text .n_h4 {
+    margin: 15px 0;
+    font-size: 14px; }
+  .Content_Text img {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 8px; }
+  .Content_Text .text_indent {
+    text-indent: 2em; }
+  .Content_Text .font_italic {
+    font-style: italic; }
+  .Content_Text .font_ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%; }
+  .Content_Text .text_center {
+    text-align: center; }
+  .Content_Text .text_left {
+    text-align: left; }
+  .Content_Text .text_right {
+    text-align: right; }
+  .Content_Text .ul_li .level1 .level2 {
+    margin-left: 20px; }
+  .Content_Text .table {
+    border-collapse: collapse;
+    empty-cells: show;
+    border-spacing: 0;
+    border: 1px solid #ccc;
+    width: 100%;
+    text-align: center; }
+  .Content_Text .table tr {
+    height: 40px;
+    line-height: 40px; }
+  .Content_Text .table td {
+    width: 25%; }
+  .Content_Text .table th {
+    width: 25%;
+    font-weight: bold;
+    text-align: center; }
+  .Content_Text .table th, .Content_Text table td {
+    border: 1px solid #ff0000; }
+  .Content_Text .table tr:nth-of-type(2n) {
+    background-color: #f8f8f8; }
+  .Content_Text .table th {
+    background-color: #ccc; }
+  .Content_Text .table td:nth-of-type(2n) {
+    background-color: #fff; }
+  .Content_Text sub, .Content_Text sup {
+    font-size: 12px; }

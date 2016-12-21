@@ -1,0 +1,111 @@
+.margin-top {
+  margin-top: 45px; }
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/*index*/
+.index_con {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: #ebebeb; }
+  .index_con .index_video_img {
+    width: 94%;
+    margin: 23px 3% 10px 3%;
+    position: relative; }
+    .index_con .index_video_img img {
+      width: 100%; }
+    .index_con .index_video_img a {
+      color: #000;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: block; }
+    .index_con .index_video_img .video_title {
+      width: 100%;
+      height: 37px;
+      line-height: 37px;
+      text-indent: 30px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      font-size: 16px; }
+  .index_con .index_menu {
+    width: 94%;
+    margin: 0 3%; }
+    .index_con .index_menu li {
+      height: 60px;
+      line-height: 60px;
+      margin-bottom: 10px;
+      line-height: 60px;
+      text-align: center;
+      background-color: #ccc;
+      width: 48.5%;
+      float: left; }
+    .index_con .index_menu li:nth-of-type(2n) {
+      margin-left: 3%; }
+    .index_con .index_menu a {
+      color: #3c3c3c;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: block; }
+
+/*videodetail*/
+.videodetail {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-color: #ebebeb; }
+  .videodetail .ivideodetail_video {
+    width: 94%;
+    margin: 23px 3% 10px 3%;
+    background-color: #ccc;
+    min-height: 160px;
+    position: relative; }
+    .videodetail .ivideodetail_video .videodetail_title {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 34px;
+      line-height: 34px;
+      text-align: center;
+      font-size: 16px; }
+    .videodetail .ivideodetail_video .video {
+      position: absolute;
+      left: 0;
+      top: 0; }
+  .videodetail .video_about {
+    width: 94%;
+    margin: 15px 3%; }
+    .videodetail .video_about li {
+      float: left;
+      width: 49%;
+      font-size: 13px;
+      margin-bottom: 10px; }
+      .videodetail .video_about li img {
+        width: 100%; }
+      .videodetail .video_about li p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 100%; }
+    .videodetail .video_about a {
+      color: #3c3c3c;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: block; }
+    .videodetail .video_about li:nth-of-type(2n) {
+      margin-left: 2%; }
+  .videodetail .about_title {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-indent: 3%;
+    margin-top: 5px; }
