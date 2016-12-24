@@ -19,9 +19,9 @@ $(document).ready(function() {
 		// 推荐默认第一个
 		for (var i = 0; i < 1; i++) {
 			if (recommenddata[i].type == 'video')  {
-				htmlt +='<a href="videodetail.html">';
+				htmlt +='<a href="videodetail'+recommenddata[i].id+'.html">';
 			}else{
-				htmlt +='<a href="videodetail.html">';
+				htmlt +='<a href="article/geth'+recommenddata[i].id+'.html">';
 			}
 				htmlt +='<div class="recommend_img">'+
 							'<img src="'+InitUrl+''+recommenddata[i].img+'" class="recommend_topimg" alt="">'
