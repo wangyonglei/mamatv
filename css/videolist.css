@@ -62,7 +62,15 @@
     margin-right: 3%;
     font-size: 30px;
     color: #6e6e6e;
-    line-height: 32px; }
+    line-height: 32px;
+    width: 30px;
+    text-align: center;
+    display: block; }
+  .videolist_title a {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block; }
 
 .videolist_con {
   width: 98%;

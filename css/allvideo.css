@@ -1,0 +1,69 @@
+.allvideo {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-top: 5px; }
+  .allvideo .videolist_con {
+    width: 98%;
+    padding: 0 1%; }
+    .allvideo .videolist_con li {
+      width: 49%;
+      float: left;
+      position: relative;
+      margin-bottom: 10px; }
+      .allvideo .videolist_con li .videolist_conimg {
+        text-align: center;
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden; }
+        .allvideo .videolist_con li .videolist_conimg img {
+          width: 100%; }
+      .allvideo .videolist_con li .videolist_contit {
+        width: 100%;
+        text-align: left;
+        text-indent: 3%; }
+      .allvideo .videolist_con li .videolist_num {
+        color: #6e6e6e;
+        font-size: 13px;
+        text-indent: 13%;
+        width: 100%;
+        background-image: url(../images/videolist_num.jpg);
+        background-size: 15px;
+        background-repeat: no-repeat;
+        background-position: 3% center; }
+    .allvideo .videolist_con li:nth-of-type(2n) {
+      margin-left: 2%; }
+  .allvideo .videolist_toptime {
+    position: absolute;
+    top: 10px;
+    right: 3%;
+    font-size: 12px;
+    width: 50px;
+    height: 16px;
+    transform: scale(0.9);
+    border-radius: 10px;
+    overflow: hidden; }
+    .allvideo .videolist_toptime .videolist_topbg, .allvideo .videolist_toptime .videolist_topdate {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; }
+    .allvideo .videolist_toptime .videolist_topdate {
+      z-index: 10;
+      color: #fff;
+      text-align: center;
+      line-height: 14px; }
+    .allvideo .videolist_toptime .videolist_topbg {
+      background-color: #000;
+      opacity: .5;
+      z-index: 9; }
+  .allvideo .loading {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 13px;
+    float: left; }

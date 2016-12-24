@@ -18,7 +18,8 @@
 	}
 }
 .videolist_title { text-indent: 3%; height: 32px; line-height: 32px; margin-top: 8px;
-	span { float: right; margin-right: 3%; font-size: 30px; color: #6e6e6e; line-height: 32px; }
+	span { float: right; margin-right: 3%; font-size: 30px; color: #6e6e6e; line-height: 32px;width: 30px; text-align: center; display: block; }
+	a{ width: 100%; height: 100%; overflow: hidden; display: block; }
 }
 .videolist_con { width: 98%; padding: 0 1%;
 	li { width: 49%; float: left; position: relative; margin-bottom: 10px;
