@@ -9,15 +9,18 @@
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" href="video/assets/hivideo.css" />
     <link rel="stylesheet" href="css/videodetail.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
     <script type="text/javascript" src="video/hivideo.js"></script>
 </head>
 <body>
-    <div class="main-wrap">
-        <video ishivideo="true" autoplay="true" isrotate="false" autoHide="true">
-            <source src="http://www.html5videoplayer.net/videos/madagascar3.mp4" type="video/mp4"></video>
-    </div>
-    <div class="bo_title">站着换尿布</div>
-    <div class="bo_tag">卫生<span>#幼儿早教#</span></div>
+  <div class="videodetail_v">
+     <!--  <div class="main-wrap">
+          <video ishivideo="true" autoplay="true" isrotate="false" autoHide="true">
+              <source src="http://www.html5videoplayer.net/videos/madagascar3.mp4" type="video/mp4"></video>
+      </div>
+      <div class="bo_title">站着换尿布</div>
+      <div class="bo_tag">卫生<span>#幼儿早教#</span></div> -->
+  </div>
     <div class="like_tit">猜你喜欢</div>
     <div class="swiper-container like_video">
         <div class="swiper-wrapper">
@@ -93,16 +96,10 @@
             </div>
         </div>
     </div>
-    <link rel="stylesheet" href="css/swiper.min.css" />
+    
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script>
-    var swiper = new Swiper('.like_video', {
-       pagination: '.swiper-pagination',
-        slidesPerView: 2,
-        paginationClickable: true,
-        spaceBetween: 10,
-        freeMode: true
-    });
-    </script>
+    <script type="text/javascript" src="js/videodetail.js"></script>
+    
 </body>
 </html>

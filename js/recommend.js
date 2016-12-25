@@ -19,9 +19,9 @@ $(document).ready(function() {
 		// 推荐默认第一个
 		for (var i = 0; i < 1; i++) {
 			if (recommenddata[i].type == 'video')  {
-				htmlt +='<a href="videodetail'+recommenddata[i].id+'.html">';
+				htmlt +='<a href="videodetail.html?id='+recommenddata[i].id+'">';
 			}else{
-				htmlt +='<a href="article/geth'+recommenddata[i].id+'.html">';
+				htmlt +='<a href="'+InitUrl+'article/geth5.html?id='+recommenddata[i].id+'">';
 			}
 				htmlt +='<div class="recommend_img">'+
 							'<img src="'+InitUrl+''+recommenddata[i].img+'" class="recommend_topimg" alt="">'
@@ -39,9 +39,9 @@ $(document).ready(function() {
 		$('.recommend_top').html(htmlt)
 		for (var i = 1; i < recommendlength; i++) {
 			if (recommenddata[i].type == 'video')  {
-				htmlb +='<li><a href="videodetail.html">';
+				htmlb +='<li><a href="videodetail.html?id='+recommenddata[i].id+'">';
 			}else{
-				htmlb +='<li><a href="videodetail.html">';
+				htmlb +='<li><a href="'+InitUrl+'article/geth5.html?id='+recommenddata[i].id+'">';
 			}
 				htmlb +='<div class="recommend_right">'+
 							'<img src="'+InitUrl+''+recommenddata[i].img+'" class="recommend_liimg" alt="">'
