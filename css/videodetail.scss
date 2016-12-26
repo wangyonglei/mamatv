@@ -13,8 +13,10 @@
 
 
 .bo_title { width: 100%; text-indent: 3%; font-size: 15px; line-height: 35px; }
-.bo_tag { width: 100%; text-indent: 3%; font-size: 12px; color: #6e6e6e; 
-	span{ float: right; margin-right: 3%; color: #f3cd24 }
+.bo_tag { width: 100%; text-indent: 3%; font-size: 12px; color: #6e6e6e;  height: auto; overflow: hidden;
+	span{ float: left;  color: #6e6e6e }
 }
 .like_title{ position: absolute; left: 3%; bottom: 8px; color: #fff; }
 .like_tit { width: 100%; height: 30px; line-height: 30px; text-align: center; background-image: url(../images/videolist_navbg.jpg); background-repeat: no-repeat; background-position: center; background-size: 22%; }
+
+.swiper-slide{ cursor: pointer; }

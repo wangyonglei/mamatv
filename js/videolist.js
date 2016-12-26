@@ -28,8 +28,8 @@ $(document).ready(function() {
 				'left': lengthz
 			});
 
-			currentPage = content_index
-			currentPageDate()
+			// currentPage = content_index
+			// currentPageDate()
 		}
 	});
 	swiper2.params.control = swiper1;
@@ -41,8 +41,11 @@ $(document).ready(function() {
 	});
 	// 默认第一屏数据加载
 	var html_video = '';
-	var currentPage = 1
+	var currentPage = 1;
 	var thisNum = 0;
+	var category = 1;
+	var html_con = ''
+	// var html_title = ''
 	
 		
 	function currentPageDate() {
@@ -51,12 +54,14 @@ $(document).ready(function() {
 				type: 'GET',
 				dataType: 'json',
 				data: {
-					currentPage: currentPage
+					currentPage: currentPage,
+					category:category,
+					tag:1
 				},
 				success: function(data) {
 					var videolistdata = data.data;
 					for (var i = 0; i < 1; i++) {
-						html_video += '<div class="videolist_top">' +
+						html_video += //'<div class="videolist_top">' +
 							'<a href="videodetail.html">' +
 							'<div class="videolist_img">' +
 							'<img src="' + InitUrl + '' + videolistdata[i].img + '" class="videolist_topimg" alt="">' +
@@ -67,16 +72,19 @@ $(document).ready(function() {
 							'</div>' +
 							'</div>' +
 							'</a>' +
-							'</div>'
+							//'</div>'
+							'分类'+category +'============页' +currentPage
 					}
-					html_video += '<div class="videolist_title">' +
-						'热门推荐' +
-						'<span><a href="allvideo.html">···</a></span>' +
-						'</div>' +
-						'<div class="videolist_con">' +
-						'<ul>'
+
+					 $('.videolist_content').find('.swiper-slide').eq(thisNum).find('.videolist_top').html(html_video)
+					// html_video += '<div class="videolist_title">' +
+					// 	'热门推荐' +
+					// 	'<span><a href="allvideo.html">···</a></span>' +
+					// 	'</div>' +
+					// 	'<div class="videolist_con">' +
+					// 	'<ul>'
 					for (var i = 1; i < videolistdata.length; i++) {
-						html_video += '<li>' +
+						html_con += '<li>' +
 							'<a href="videodetail.html">' +
 							'<div class="videolist_conimg">' +
 							'<img src="' + InitUrl + '' + videolistdata[i].img + '" alt=""></div>' +
@@ -89,13 +97,14 @@ $(document).ready(function() {
 							'</a>' +
 							'</li>'
 					}
-					html_video += '</ul></div>'
-					$('.videolist_content').find('.swiper-slide').eq(thisNum).html(html_video)
+					 $('.videolist_content').find('.swiper-slide').eq(thisNum).find('.loading').before(html_con);
+					// html_video += '</ul></div>'
+					// $('.videolist_content').find('.swiper-slide').eq(thisNum).html(html_video)
 				}
 			})
 	}
 
-	currentPageDate()
+	currentPageDate();
 	// 导航与内容上下关联
 	// var el_content = $('.videolist_content .swiper-slide');
 	el_nav.click(function() {
@@ -112,9 +121,16 @@ $(document).ready(function() {
 			'width': nav_width,
 			'left': lengths
 		});
-		currentPage = nav_index + 1
+	
+
+
+		// currentPage = nav_index + 1
 		thisNum = nav_index
+		category = nav_index + 1
+		console.log(currentPage)
+		console.log(category)
 			// 点击对应数据加载
+		// $('.videolist_content').find('.swiper-slide').eq(thisNum).html('')
 		currentPageDate()
 	});
 

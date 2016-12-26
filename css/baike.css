@@ -2,63 +2,75 @@
   width: 100%;
   height: 45px;
   line-height: 45px;
-  background-color: #fdfdfd; }
-  .baike_nav p {
-    position: absolute;
-    width: auto;
-    left: 0;
-    height: 2px;
-    background-color: #f3cd24;
-    bottom: 0;
-    right: auto; }
-  .baike_nav .swiper-slide {
-    width: auto;
-    float: left;
-    color: #6e6e6e;
-    margin: 0 20px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto 7px; }
-  .baike_nav .nav_act {
-    color: #f3cd24; }
+  background-color: #fdfdfd;
+}
+.baike_nav p {
+  position: absolute;
+  width: auto;
+  left: 0;
+  height: 2px;
+  background-color: #f3cd24;
+  bottom: 0;
+  right: auto;
+}
+.baike_nav .swiper-slide {
+  width: auto;
+  float: left;
+  color: #6e6e6e;
+  margin: 0 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 7px;
+}
+.baike_nav .nav_act {
+  color: #f3cd24;
+}
 
 .baike_content {
-  margin-top: 45px; }
+  margin-top: 45px;
+}
 
 .baike_con {
   width: 100%;
   height: auto;
-  overflow: hidden; }
-  .baike_con ul li {
-    display: none;
-    text-indent: 20px;
-    width: 100%;
-    position: relative;
-    border-bottom: 1px solid #ededed;
-    font-size: 14px;
-    height: 35px;
-    line-height: 35px; }
-  .baike_con .addli li {
-    display: block; }
-  .baike_con .baike_title {
-    border-bottom: 1px solid #ededed;
-    width: 100%;
-    background-color: #f9f9f9;
-    height: 40px;
-    line-height: 40px;
-    text-indent: 20px;
-    font-size: 15px;
-    color: #f3cd24; }
-    .baike_con .baike_title .j {
-      float: right;
-      transition: all .3s ease-in-out;
-      -webkit-transition: all .3s ease-in-out; }
-    .baike_con .baike_title .addj {
-      transform: rotate(-90deg);
-      -webkit-transform: rotate(-90deg); }
+  overflow: hidden;
+}
+.baike_con ul li {
+  display: none;
+  text-indent: 20px;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #ededed;
+  font-size: 14px;
+  height: 35px;
+  line-height: 35px;
+}
+.baike_con .addli li {
+  display: block;
+}
+.baike_con .baike_title {
+  border-bottom: 1px solid #ededed;
+  width: 100%;
+  background-color: #f9f9f9;
+  height: 40px;
+  line-height: 40px;
+  text-indent: 20px;
+  font-size: 15px;
+  color: #f3cd24;
+}
+.baike_con .baike_title .j {
+  float: right;
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+}
+.baike_con .baike_title .addj {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
 
 #baike_nav {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 10; }
+  z-index: 10;
+}

@@ -19,7 +19,7 @@ $(document).ready(function() {
 		// 推荐默认第一个
 		for (var i = 0; i < 1; i++) {
 			if (recommenddata[i].type == 'video')  {
-				htmlt +='<a href="videodetail.html?id='+recommenddata[i].id+'">';
+				htmlt +='<a href="videodetail.html?id='+recommenddata[i].id+'&fileName='+recommenddata[i].fileName+'">';
 			}else{
 				htmlt +='<a href="'+InitUrl+'article/geth5.html?id='+recommenddata[i].id+'">';
 			}
@@ -39,7 +39,7 @@ $(document).ready(function() {
 		$('.recommend_top').html(htmlt)
 		for (var i = 1; i < recommendlength; i++) {
 			if (recommenddata[i].type == 'video')  {
-				htmlb +='<li><a href="videodetail.html?id='+recommenddata[i].id+'">';
+				htmlb +='<li><a href="videodetail.html?id='+recommenddata[i].id+'&fileName='+recommenddata[i].fileName+'">';
 			}else{
 				htmlb +='<li><a href="'+InitUrl+'article/geth5.html?id='+recommenddata[i].id+'">';
 			}

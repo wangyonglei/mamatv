@@ -21,7 +21,7 @@
 	span { float: right; margin-right: 3%; font-size: 30px; color: #6e6e6e; line-height: 32px;width: 30px; text-align: center; display: block; }
 	a{ width: 100%; height: 100%; overflow: hidden; display: block; }
 }
-.videolist_con { width: 98%; padding: 0 1%;
+.videolist_con { width: 98%; padding: 0 1%; height: auto; overflow: hidden;
 	li { width: 49%; float: left; position: relative; margin-bottom: 10px;
 		.videolist_conimg { text-align: center; position: relative; width: 100%; height: auto; overflow: hidden;
 			img { width: 100%; }
@@ -38,3 +38,5 @@
 }
 
 #videolist_nav{ position: fixed;left: 0; top: 0; z-index: 10;}
+.loading{ width: 100%; height: 30px; line-height: 30px; text-align: center;float: left;
+ }
